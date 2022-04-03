@@ -1,2 +1,70 @@
 @import "normalize.css";
 
+body {
+    display: grid;
+    grid:
+        "sidebar header" 1fr
+        "sidebar main" 4fr
+        / 1fr 6fr;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+}
+
+.header-search {
+    display: flex;
+    gap: 10px;
+}
+
+.header-notifications, .header-buttons {
+    margin-left: auto;
+}
+
+.header-content {
+    display: flex;
+    gap: 10px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    gap: 20px;
+    grid:
+        "cards-container announcements-container" 1fr
+        "cards-container trending-container" 1fr
+        / 3fr 1fr;
+}
+
+.cards-container {
+    grid-area: cards-container;
+}
+
+.cards-content {
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 10px;
+}
+
+.announcements-container {
+    grid-area: announcements-container;
+}
+
+.announcements-content {
+    display: grid;
+    gap: 10px;
+}
+
+.trending-container {
+    grid-area: trending-container;
+}
+
+.trending-content {
+    display: grid;
+    gap: 10px;
+}
