@@ -4,7 +4,7 @@ html {
     --dark-color: #0891B2;
     --medium-color: #A5F3FC;
     --medium-color-shadow: #78b3b9;
-    --light-color: #CFFAFE;;
+    --light-color: #CFFAFE;
 }
 
 body {
@@ -19,6 +19,28 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: var(--dark-color);
+    color:
+    var(--light-color);
+    padding: 20px;
+}
+
+.sidebar-header {
+    display: flex;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+.sidebar-header img {
+    width: 2em;
+}
+
+.sidebar .nav-element {
+    display: flex;
+    gap: 1em;
+}
+
+.sidebar-nav img, .sidebar-settings img {
+    height: 1em;
 }
 
 .header {
@@ -34,7 +56,11 @@ body {
     gap: 10px;
 }
 
-.header-notifications, .header-buttons {
+.header img {
+    width: 1.2em;
+}
+
+.header img, .header-buttons {
     margin-left: auto;
 }
 
