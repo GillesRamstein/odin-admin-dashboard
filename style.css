@@ -1,20 +1,32 @@
 @import "normalize.css";
 
+html {
+    --dark-color: #0891B2;
+    --medium-color: #A5F3FC;
+    --medium-color-shadow: #78b3b9;
+    --light-color: #CFFAFE;;
+}
+
 body {
+    height: 100vh;
     display: grid;
     grid:
-        "sidebar header" 1fr
-        "sidebar main" 4fr
-        / 1fr 6fr;
+        "sidebar header" 120px
+        "sidebar main" 1fr
+        / 250px 1fr;
 }
 
 .sidebar {
     grid-area: sidebar;
+    background-color: var(--dark-color);
 }
 
 .header {
     grid-area: header;
     display: grid;
+    align-items: center;
+    background-color: var(--light-color);
+    padding: 0 2vw;
 }
 
 .header-search {
@@ -39,6 +51,14 @@ body {
         "cards-container announcements-container" 1fr
         "cards-container trending-container" 1fr
         / 3fr 1fr;
+    background-color: var(--medium-color);
+    padding: 6vh 2vw;
+    box-shadow: inset 0 5px 5px var(--medium-color-shadow);
+}
+
+.main-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .cards-container {
@@ -48,7 +68,34 @@ body {
 .cards-content {
     display: grid;
     grid: repeat(3, 1fr) / repeat(2, 1fr);
-    gap: 10px;
+    gap: 2vh 2vw;
+}
+
+.cards-card {
+    background-color: var(--light-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 10px solid #0891B2;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--medium-color-shadow);
+    
+}
+
+.cards-card-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cards-card-content {
+    margin-bottom: 1rem;
+}
+
+.cards-card-interactions {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    margin-top: auto;
 }
 
 .announcements-container {
@@ -57,7 +104,11 @@ body {
 
 .announcements-content {
     display: grid;
-    gap: 10px;
+    gap: 2vh;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--medium-color-shadow);
 }
 
 .trending-container {
@@ -66,5 +117,9 @@ body {
 
 .trending-content {
     display: grid;
-    gap: 10px;
+    gap: 2vh;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--medium-color-shadow);
 }
