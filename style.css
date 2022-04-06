@@ -1,8 +1,12 @@
 @import "normalize.css";
 
+/* ---------- Global ---------- */
+
 ul {
     margin: 0;
 }
+
+/* ---------- Global: Colors ---------- */
 
 html {
     --dark-color: #0891B2;
@@ -13,17 +17,19 @@ html {
     --text-dark: #19282b;
 }
 
+/* ---------- Global: Main Section Layout ---------- */
+
 body {
     height: 100vh;
     display: grid;
     grid:
-        "sidebar header" 120px
+        "sidebar header" 160px
         "sidebar main" 1fr
         / 250px 1fr;
     color: var(--text-dark);
 }
 
-/* ---------- Titles ---------- */
+/* ---------- Global: Titles ---------- */
 
 h1 {
     font-weight: 900;
@@ -39,7 +45,7 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-/* ---------- Icons ---------- */
+/* ---------- Global: Icons ---------- */
 
 .user-icon {
     width: 60px;
@@ -77,25 +83,69 @@ h3 {
     display: grid;
     align-items: center;
     background-color: var(--light-color);
-    padding: 0 2vw;
+    padding: 10px 2vw 10px 2vw;
 }
 
 .header-search {
     display: flex;
+    align-items: center;
     gap: 10px;
+    margin-bottom: -5px;
 }
 
-#notifications-icon, .header-buttons {
+.header-buttons {
     margin-left: auto;
+}
+
+input[type=text] {
+    flex: 1;
+    border-radius: 1em;
+    padding-left: 0.8em;
+    margin-right: 100px;
+    border: none;
+    background-color: var(--medium-color);
+    box-shadow: inset 0 1px 1px var(--medium-color-shadow);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.header-user-name {
+    font-weight: 600;
 }
 
 .header-content {
     display: flex;
+    align-items: center;
     gap: 10px;
+    margin-top: -5px;
 }
 
 .header-content .user-icon {
-    width: 100px;
+    width: 80px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-message-intro {
+    font-size: 0.8em;
+}
+
+.header-message-user-name {
+    font-size: large;
+    font-weight: 700;
+}
+
+input[type=button] {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    border: none;
 }
 
 /* ---------- Main Content ---------- */
@@ -117,6 +167,8 @@ h3 {
     padding: 6vh 2vw;
     box-shadow: inset 0 5px 5px var(--medium-color-shadow);
 }
+
+/* ---------- Main Content: Cards ---------- */
 
 .cards-wrapper {
     grid-area: cards;
@@ -152,6 +204,8 @@ h3 {
     margin-top: auto;
 }
 
+/* ---------- Main Content: Announcements ---------- */
+
 .announcements-wrapper {
     grid-area: announcements;
 }
@@ -171,6 +225,8 @@ h3 {
     padding-bottom: 0;
     border-bottom: none;
 }
+
+/* ---------- Main Content: Trending ---------- */
 
 .trending-wrapper {
     grid-area: trending;
