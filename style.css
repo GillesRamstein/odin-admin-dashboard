@@ -6,6 +6,10 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ---------- Global: Colors ---------- */
 
 html {
@@ -33,6 +37,7 @@ body {
 
 h1 {
     font-weight: 900;
+    font-size: 1.2rem;
 }
 
 h2 {
@@ -63,17 +68,41 @@ h3 {
     color:
     var(--light-color);
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .sidebar-header {
     display: flex;
+    align-items: center;
     gap: 1rem;
     font-weight: 700;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 
-.sidebar .nav-element {
+.sidebar-logo {
+    height: 3em;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.nav-element {
     display: flex;
     gap: 1em;
+    font-size: 1.1rem;
+}
+
+.sidebar a, .siderbar a:visited {
+    color: var(--light-color);
 }
 
 /* ---------- Header ---------- */
