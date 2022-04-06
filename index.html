@@ -13,64 +13,117 @@
                 <div class="sidebar-logo">
                     <img src="images/mushroom.svg" alt="page logo" />
                 </div>
-                <div class="sidebar-title">title</div>
+                <h1>title</h1>
             </div>
             <div class="sidebar-nav">
                 <div>
-                    <div class="nav-element">
-                        <img src="images/home.svg" alt="home icon" />
+                    <a class="nav-element" href="index.html">
+                        <img
+                            class="nav-icon"
+                            src="images/home.svg"
+                            alt="home icon"
+                        />
                         <div>Home</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/profile.svg" alt="profile icon" />
+                    </a>
+                    <a class="nav-element" href="pages/profile.html">
+                        <img
+                            class="nav-icon"
+                            src="images/profile.svg"
+                            alt="profile icon"
+                        />
                         <div>Profile</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/messages.svg" alt="messages icon" />
+                    </a>
+                    <a class="nav-element" href="pages/messages.html">
+                        <img
+                            class="nav-icon"
+                            src="images/messages.svg"
+                            alt="messages icon"
+                        />
                         <div>Message</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/history.svg" alt="history icon" />
+                    </a>
+                    <a class="nav-element" href="pages/history.html">
+                        <img
+                            class="nav-icon"
+                            src="images/history.svg"
+                            alt="history icon"
+                        />
                         <div>History</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/tasks.svg" alt="tasks icon" />
+                    </a>
+                    <a class="nav-element" href="pages/tasks.html">
+                        <img
+                            class="nav-icon"
+                            src="images/tasks.svg"
+                            alt="tasks icon"
+                        />
                         <div>Tasks</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/community.svg" alt="community icon" />
+                    </a>
+                    <a class="nav-element" href="pages/communitiy.html">
+                        <img
+                            class="nav-icon"
+                            src="images/community.svg"
+                            alt="community icon"
+                        />
                         <div>Communities</div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="sidebar-settings">
                 <div>
-                    <div class="nav-element">
-                        <img src="images/settings.svg" alt="settings icon" />
+                    <a class="nav-element" href="pages/settings.html">
+                        <img
+                            class="nav-icon"
+                            src="images/settings.svg"
+                            alt="settings icon"
+                        />
                         <div>Settings</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/support.svg" alt="support icon" />
+                    </a>
+                    <a class="nav-element" href="support.html">
+                        <img
+                            class="nav-icon"
+                            src="images/support.svg"
+                            alt="support icon"
+                        />
                         <div>Support</div>
-                    </div>
-                    <div class="nav-element">
-                        <img src="images/privacy.svg" alt="privacy icon" />
+                    </a>
+                    <a class="nav-element" href="pages/privacy.html">
+                        <img
+                            class="nav-icon"
+                            src="images/privacy.svg"
+                            alt="privacy icon"
+                        />
                         <div>Privacy</div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="header">
             <div class="header-search">
-                <img src="images/search.svg" alt="search icon" />
+                <img
+                    class="nav-icon"
+                    src="images/search.svg"
+                    alt="search icon"
+                />
                 <div><input type="text" /></div>
-                <img src="images/notifications.svg" alt="notificatons icon" />
-                <div class="header-user-icon">user icon</div>
+                <img
+                    id="notifications-icon"
+                    class="nav-icon"
+                    src="images/notifications.svg"
+                    alt="notificatons icon"
+                />
+                <img
+                    class="user-icon"
+                    src="images/icons8-jake.svg"
+                    alt="user icon jake"
+                />
                 <div class="header-user-name">User Name</div>
             </div>
             <div class="header-content">
-                <div class="header-user-icon-large">user icon large</div>
+                <img
+                    class="user-icon"
+                    src="images/icons8-jake.svg"
+                    alt="user icon jake"
+                />
                 <div class="header-message">
                     <div class="header-message-intro">Hi there,</div>
                     <div class="header-message-user-name">
@@ -86,65 +139,65 @@
         </div>
 
         <div class="main">
-            <div class="cards-container">
-                <div class="main-title">Cards Title</div>
-                <div class="cards-content">
-                    <div class="cards-card">
-                        <div class="cards-card-title">Super Cool Project</div>
-                        <div class="cards-card-content">
+            <div class="cards-wrapper">
+                <h2>Cards Title</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <div class="card-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
                         </div>
                     </div>
-                    <div class="cards-card">
-                        <div class="cards-card-title">Less Cool Project</div>
-                        <div class="cards-card-content">
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <div class="card-content">
                             Duis aute irure dolor in reprehenderit in voluptate
                             velit esse cillum dolore eu fugiat nulla pariatur.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
                         </div>
                     </div>
-                    <div class="cards-card">
-                        <div class="cards-card-title">Impossible App</div>
-                        <div class="cards-card-content">
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <div class="card-content">
                             Excepteur sint occaecat cupidatat non proident, sunt
                             in culpa qui officia deserunt mollit anim id est
                             laborum.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
                         </div>
                     </div>
-                    <div class="cards-card">
-                        <div class="cards-card-title">Easy Peasy App</div>
-                        <div class="cards-card-content">
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <div class="card-content">
                             Sed ut perspiciatis unde omnis iste natus error sit
                             voluptatem accusantium doloremque laudantium, totam
                             rem aperiam, eaque ipsa quae ab illo inventore
                             veritatis et quasi architecto beatae vitae dicta
                             sunt explicabo.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
                         </div>
                     </div>
-                    <div class="cards-card">
-                        <div class="cards-card-title">Add Blocker</div>
-                        <div class="cards-card-content">
+                    <div class="card">
+                        <h3>Add Blocker</h3>
+                        <div class="card-content">
                             Nemo enim ipsam voluptatem quia voluptas sit
                             aspernatur aut odit aut fugit, sed quia consequuntur
                             magni dolores eos qui ratione voluptatem sequi
@@ -154,20 +207,20 @@
                             incidunt ut labore et dolore magnam aliquam quaerat
                             voluptatem.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
                         </div>
                     </div>
-                    <div class="cards-card">
-                        <div class="cards-card-title">Money Maker</div>
-                        <div class="cards-card-content">
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <div class="card-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua.
                         </div>
-                        <div class="cards-card-interactions">
+                        <div class="card-interactions">
                             <div class="star">star</div>
                             <div class="watch">watch</div>
                             <div class="fork">fork</div>
@@ -176,34 +229,28 @@
                 </div>
             </div>
 
-            <div class="announcements-container">
-                <div class="main-title">Announcements</div>
-                <div class="announcements-content">
-                    <div class="announcements-message">
-                        <div class="announcements-message-title">
-                            Site Maintenance
-                        </div>
-                        <div class="announcements-message-content">
+            <div class="announcements-wrapper">
+                <h2>Announcements</h2>
+                <div class="card announcements">
+                    <div class="announcement">
+                        <h3>Site Maintenance</h3>
+                        <div class="announcement-message">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua...
                         </div>
                     </div>
-                    <div class="announcements-message">
-                        <div class="announcements-message-title">
-                            Community Share Day
-                        </div>
-                        <div class="announcements-message-content">
+                    <div class="announcement">
+                        <h3>Community Share Day</h3>
+                        <div class="announcement-message">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua...
                         </div>
                     </div>
-                    <div class="announcements-message">
-                        <div class="announcements-message-title">
-                            Updated Privacy Policy
-                        </div>
-                        <div class="announcements-message-content">
+                    <div class="announcement">
+                        <h3>Updated Privacy Policy</h3>
+                        <div class="announcement-message">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua...
@@ -212,35 +259,59 @@
                 </div>
             </div>
 
-            <div class="trending-container">
-                <div class="main-title">Trending</div>
-                <ul class="trending-content">
-                    <li>
-                        <div class="trending-user-icon">user logo</div>
-                        <div class="trending-user-name">@tegan</div>
-                        <div class="trending-user-caption">
-                            World Peace Builder
+            <div class="trending-wrapper">
+                <h2>Trending</h2>
+                <ul class="card trending">
+                    <li class="trending-element">
+                        <img
+                            class="user-icon"
+                            src="images/icons8-mando.svg"
+                            alt="user icon mando"
+                        />
+                        <div class="trending-content">
+                            <div class="trending-user-name">@tegan</div>
+                            <div class="trending-user-caption">
+                                World Peace Builder
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="trending-user-icon">user logo</div>
-                        <div class="trending-user-name">@morgan</div>
-                        <div class="trending-user-caption">
-                            Super Cool Project
+                    <li class="trending-element">
+                        <img
+                            class="user-icon"
+                            src="images/icons8-jake.svg"
+                            alt="user icon jake"
+                        />
+                        <div class="trending-content">
+                            <div class="trending-user-name">@morgan</div>
+                            <div class="trending-user-caption">
+                                Super Cool Project
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="trending-user-icon">user logo</div>
-                        <div class="trending-user-name">@kendall</div>
-                        <div class="trending-user-caption">
-                            Life Changing App
+                    <li class="trending-element">
+                        <img
+                            class="user-icon"
+                            src="images/icons8-futurama-bender.svg"
+                            alt="user icon bender"
+                        />
+                        <div class="trending-content">
+                            <div class="trending-user-name">@kendall</div>
+                            <div class="trending-user-caption">
+                                Life Changing App
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="trending-user-icon">user logo</div>
-                        <div class="trending-user-name">@alex</div>
-                        <div class="trending-user-caption">
-                            No Traffic Maker
+                    <li class="trending-element">
+                        <img
+                            class="user-icon"
+                            src="images/icons8-anonymous-mask.svg"
+                            alt="user icon anon"
+                        />
+                        <div class="trending-content">
+                            <div class="trending-user-name">@alex</div>
+                            <div class="trending-user-caption">
+                                No Traffic Maker
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -248,3 +319,6 @@
         </div>
     </body>
 </html>
+
+<!-- <a target="_blank" href="https://icons8.com/icon/hqGtmpXAUs4x/mando">Mando</a>
+icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
