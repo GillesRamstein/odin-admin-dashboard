@@ -1,5 +1,21 @@
 @import "normalize.css";
 
+
+/* ---------- Fonts ---------- */
+@font-face {
+    font-family: "Orbitron";
+    src: url("fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
 /* ---------- Global ---------- */
 
 ul {
@@ -13,10 +29,10 @@ a {
 /* ---------- Global: Colors ---------- */
 
 html {
-    --dark-color: #0891B2;
-    --medium-color: #A5F3FC;
-    --medium-color-shadow: #78b3b9;
-    --light-color: #CFFAFE;
+    --dark-color: #086981;
+    --medium-color: #7fb8be;
+    --medium-color-shadow: #558085;
+    --light-color: #d0f3f7;
     --text-light: #3f585e;
     --text-dark: #19282b;
 }
@@ -36,16 +52,22 @@ body {
 /* ---------- Global: Titles ---------- */
 
 h1 {
+    font-family: "Orbitron", sans-serif;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    padding-left: 15px;
 }
 
 h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -54,6 +76,8 @@ h3 {
 
 .user-icon {
     width: 60px;
+    border: 0.1px solid var(--medium-color-shadow);
+    border-radius: 50%;
 }
 
 .nav-icon {
@@ -71,13 +95,12 @@ h3 {
 
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 50px;
 }
 
 .sidebar-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
     font-weight: 700;
     margin-bottom: 25px;
     padding-top: 20px;
@@ -217,7 +240,7 @@ input[type=button] {
 }
 
 .cards .card {
-    border-left: 10px solid #0891B2;
+    border-left: 10px solid var(--dark-color);
     display: flex;
     flex-direction: column;
 }
@@ -248,6 +271,9 @@ input[type=button] {
     font-size: 0.85rem;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--medium-color-shadow);
+}
+.announcement h3 {
+    font-size: 1rem;
 }
 
 .announcement:last-child {
